@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    
+    background-color: rgb(21, 21, 53);
+}
+.area-paint{
+    height:700px;
+    width:560px;
+    display:grid;
+    grid-template-columns: 1fr 60px;
+    grid-template-areas: 'tela botoes';
+}
+.botoes{
+    grid-area:botoes;
+}
+#tela{
+    grid-area:tela;
+    width: 700px;
+    height:  500px;
+    border: 1px solid black;
+    background-color:#fff;
+}
+
+.btn{
+    outline:none;
+    border:none;
+    font-size:1.9rem;
+    max-width:60px;
+    padding:15px;
+    cursor:pointer;
+    color:#fff;
+}
+.btn.clean{
+    background-color:#800deb;
+    transition: all .3s;
+}
+.btn.clean:hover{
+    background-color:#43087a;
+}
+.pallete{
+    outline:none;
+    border:none;
+    color:#fff;
+    background-color:#110d22;
+    font-size:1.9rem;
+    max-width:60px;
+    padding:15px;
+}
+
+.color{
+    height:60px;
+    width: 60px;
+    border: 5px solid #110d22;
+
+}
+
+.color:hover{
+    border: 5px solid #ffffff;
+    transition:.3s;
+}
+
+.color[color="blue"]{
+    background-color:#0f5fd8;
+}
+
+.color[color="red"]{
+    background-color: #eb0d0d;
+}
+
+.color[color="green"]{
+    background-color:#0a8a10;
+}
+
+.color[color="yellow"]{
+    background-color:#f8b807;
+}
+
+.active{
+    border: 5px solid #ffffff;
+}
